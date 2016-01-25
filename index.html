@@ -5,6 +5,7 @@
   <title>Markdown Project</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link href='https://fonts.googleapis.com/css?family=Playfair+Display+SC' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -16,23 +17,22 @@
 
   <div id="container">
     <div class="row">
-      <!-- <div class="col-xs-12 col-sm-5"> -->
-      <!-- <textarea id="markEntry" class="box"></textarea> -->
-      <div class="form-group col-xs-12 col-sm-5">
-        <!-- <label for="inputTask">input</label>
-        <input type="text" class="form-control" id="markEntry" placeholder="" value="" required> -->
-      <!-- <textarea id="markEntry" rows="23" cols="56" placeholder="Enter your markdown here"></textarea> -->
+
+      <div class="form-group col-xs-12 col-md-5">
+      <h3 class="header">Write Your Markdown Here...</h3>
       <textarea id="markEntry" placeholder="Enter your markdown here"></textarea>
       </div>
 
-      <div id="output" class="form-group col-xs-12 col-sm-5">
-      <!-- <textarea id="outputDiv" class="box">TEST</textarea> -->
-      <div id="outputDiv"></div>
+      <div class="form-group col-xs-12 col-md-5 col-md-offset-1">
+      <h3 class="header html"> and Out Comes Your Converted HTML</h3>
+      <div id="output">
+        <div id="outputDiv"></div>
+      </div>
       </div>
     </div>
 
     <div class="row">
-      <button id="newEntry" class="btn btn-info">Translate It</button>
+      <button id="newEntry" class="btn btn-info btn-lg">Convert It!</button>
     </div>
  </div>
 

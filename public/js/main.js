@@ -18,7 +18,3 @@ var markedD = $('#markEntry').val();
     alert('fix me');
   });
 }
-
-// function removeText() {
-//  $('input:checked').closest('tr').remove();
-// }
