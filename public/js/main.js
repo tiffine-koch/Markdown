@@ -1,8 +1,5 @@
 $(document).ready(init);
 
-var markContent;
-var htmlContent;
-
 function init() {
   $('#newEntry').on('click', getMarkdown);
 }
@@ -10,13 +7,11 @@ function init() {
 function getMarkdown(event) {
 event.preventDefault();
 
-
 var markedD = $('#markEntry').val();
   $.post('/markdown', {markdown: markedD})
   .success(function(data) {
-    debugger;
+    // debugger;
     // console.log(data);
-    // console.log($.parseHTML(data));
     $('#outputDiv').append($.parseHTML(data));
   })
   .fail(function(err) {

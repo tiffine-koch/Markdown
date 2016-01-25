@@ -22,13 +22,15 @@ app.get('/', function(req, res) {
   res.send(html);
 });
 
-app.post('/markdown', function(req, res) {
-  var markdown = req.body.markdown;
+// app.post('/markdown', function(req, res) {
+//   var markdown = req.body.markdown;
+//
+//   var markdownText = marked(markdown);
+//   res.send(markdownText);
+// });
 
-  var markdownText = marked(markdown);
-  res.send(markdownText);
-});
-// app.use('/todos', require('./routes/todos'));
+app.use('/markdown', require('./router/mark.js'));
+
 // spin up server
 app.listen(PORT, function() {
   console.log('Express server listening on port', PORT)
