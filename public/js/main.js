@@ -12,7 +12,7 @@ var markedD = $('#markEntry').val();
   .success(function(data) {
     // debugger;
     // console.log(data);
-    $('#outputDiv').append($.parseHTML(data));
+    $('#outputDiv').empty().append($.parseHTML(data));
   })
   .fail(function(err) {
     alert('fix me');

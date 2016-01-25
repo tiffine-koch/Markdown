@@ -8,34 +8,34 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <h1>HEY</h1>
+  <div class="jumbotron">
+  <h1>Markdown</h1>
+  <p class="p_text">Transform your markdown with the push of a button!</p>
+  <!-- <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p> -->
+</div>
 
   <div id="container">
-  <div class="row">
-    <form class="form-inline">
-      <div class="form-group">
-        <label for="inputTask">input</label>
-        <input type="text" class="form-control" id="markEntry" placeholder="" value="" required>
+    <div class="row">
+      <!-- <div class="col-xs-12 col-sm-5"> -->
+      <!-- <textarea id="markEntry" class="box"></textarea> -->
+      <div class="form-group col-xs-12 col-sm-5">
+        <!-- <label for="inputTask">input</label>
+        <input type="text" class="form-control" id="markEntry" placeholder="" value="" required> -->
+      <!-- <textarea id="markEntry" rows="23" cols="56" placeholder="Enter your markdown here"></textarea> -->
+      <textarea id="markEntry" placeholder="Enter your markdown here"></textarea>
+      </div>
+
+      <div id="output" class="form-group col-xs-12 col-sm-5">
+      <!-- <textarea id="outputDiv" class="box">TEST</textarea> -->
+      <div id="outputDiv"></div>
       </div>
     </div>
-    <button id="newEntry" class="btn btn-info">Translate It</button>
-   </form>
- </div>
- </div>
-  <div id="container">
-  <div class="row">
-    <form class="form-inline">
-      <div class="form-group">
-        <label for="inputTask">Output</label>
-        <input type="text" class="form-control" id="htmlEntry" placeholder="" value="" required>
-        <div id="outputDiv">TEST</div>
-      </div>
+
+    <div class="row">
+      <button id="newEntry" class="btn btn-info">Translate It</button>
     </div>
-  </form>
  </div>
- </div>
- <br>
- <div id="newContent"></div>
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
