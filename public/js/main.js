@@ -2,6 +2,7 @@ $(document).ready(init);
 
 function init() {
   $('#newEntry').on('click', getMarkdown);
+  // $input.on('keyup', getMarkdown);
 }
 
 function getMarkdown(event) {
